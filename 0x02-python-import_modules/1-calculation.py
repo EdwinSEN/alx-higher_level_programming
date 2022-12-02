@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10, 10)
-if number > 0:
-    print("{:d} is positive".format(number))
-elif number == 0:
-    print("{:d} is zero".format(number))
-else:
-    print("{:d} is negative".format(number))
+
+if __name__ == "__main__":
+    """Print the sum, difference, product, quotient of 10 and 5."""
+    from calculator_1 import add, sub, mul, div
+
+    a = 10
+    b = 5
+
+    print("{} + {} = {}".format(a, b, add(a, b)))
+    print("{} - {} = {}".format(a, b, sub(a, b)))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
+    print("{} / {} = {}".format(a, b, div(a, b)))
